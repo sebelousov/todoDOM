@@ -13,41 +13,68 @@
         <header>
             <h1>Добавить дело</h1>
         </header>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Todo" aria-label="Recipient's username" aria-describedby="button-addon2" />
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Что сделать" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            <input type="date" class="form-control" placeholder="До какого числа" aria-label="Recipient's username" aria-describedby="button-addon2" />
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Добавить</button>
         </div>
         
         <h2>Список дел</h2>
 
-        <ul class="list-group list-group">
-            <li class="list-group-item d-flex justify-content-start align-items-start">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action d-flex justify-content-start align-items-center">
                 <div class="ms-2 me-auto">
                     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                     todo 1
                 </div>
-                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="m-2 ms-2">
+                    <div class="ms-2"><small>Добавлено: 18 октября 2021 года</small></div>
+                    <div class="ms-2"><small>Сделать до: 21 октября 2021 года</small></div>
+                    <div class="ms-2"><span class="badge bg-primary rounded-pill">Осталось: 3 дня</span></div>
+                </div>
+                <div class="m-2 ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                
             </li>
-            <li class="list-group-item d-flex justify-content-start align-items-start">
+            <li class="list-group-item list-group-item-action d-flex justify-content-start align-items-center">
                 <div class="ms-2 me-auto">
                     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                     todo 2
                 </div>
-                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="m-2 ms-2">
+                    <div class="ms-2"><small>Добавлено: 5 октября 2021 года</small></div>
+                    <div class="ms-2"><small>Сделать до: 22 октября 2021 года</small></div>
+                    <div class="ms-2"><span class="badge bg-primary rounded-pill">Осталось: 17 дней</span></div>
+                </div>
+                <div class="m-2 ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                
             </li>
-            <li class="list-group-item d-flex justify-content-start align-items-start">
+            <li class="list-group-item list-group-item-action d-flex justify-content-start align-items-center">
                 <div class="ms-2 me-auto">
                     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                     todo 3
                 </div>
-                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="m-2 ms-2">
+                    <div class="ms-2"><small>Добавлено: 1 октября 2021 года</small></div>
+                    <div class="ms-2"><small>Сделать до: 20 октября 2021 года</small></div>
+                    <div class="ms-2"><span class="badge bg-primary rounded-pill">Осталось: 9 дней</span></div>
+                </div>
+                <div class="m-2 ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                
             </li>
         </ul>
 
-        <button type="button" class="btn btn-outline-secondary">Сохранить выбранные</button>
-        <button type="button" class="btn btn-outline-secondary">Сохранить все</button>
-        <button type="button" class="btn btn-outline-danger">Удалить выбранные</button>
-        <button type="button" class="btn btn-outline-danger">Удалить все</button>
+        <button type="button" class="btn btn-outline-success btn-sm">Сделал выбранные</button>
+        <button type="button" class="btn btn-outline-success btn-sm">Сделал все</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Сохранить выбранные</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Сохранить все</button>
+        <button type="button" class="btn btn-outline-danger btn-sm">Удалить выбранные</button>
+        <button type="button" class="btn btn-outline-danger btn-sm">Удалить все</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
