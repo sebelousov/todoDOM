@@ -14,15 +14,18 @@
             <h1>Добавить дело</h1>
         </header>
         <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Что сделать" aria-label="Recipient's username" aria-describedby="button-addon2" />
-            <input type="date" class="form-control" placeholder="До какого числа" aria-label="Recipient's username" aria-describedby="button-addon2" />
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Добавить</button>
+            <input id="todo-name" type="text" class="form-control" placeholder="Что сделать" />
+            <input id="todo-date" type="date" class="form-control" placeholder="До какого числа" />
+            <button class="btn btn-outline-secondary" type="button" id="button-add-todo">Добавить</button>
         </div>
         
         <h2>Список дел</h2>
 
         <ul class="list-group">
-            <li class="list-group-item list-group-item-action d-flex justify-content-start align-items-center">
+            <li class="list-group-item list-group-item-action d-flex justify-content-center align-items-center">
+                Нет дел
+            </li>
+            <!-- <li class="list-group-item list-group-item-action d-flex justify-content-start align-items-center">
                 <div class="ms-2 me-auto">
                     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                     todo 1
@@ -66,17 +69,18 @@
                     <button type="button" class="btn-close" aria-label="Close"></button>
                 </div>
                 
-            </li>
+            </li> -->
         </ul>
 
-        <button type="button" class="btn btn-outline-success btn-sm">Сделал выбранные</button>
-        <button type="button" class="btn btn-outline-success btn-sm">Сделал все</button>
-        <button type="button" class="btn btn-outline-secondary btn-sm">Сохранить выбранные</button>
-        <button type="button" class="btn btn-outline-secondary btn-sm">Сохранить все</button>
-        <button type="button" class="btn btn-outline-danger btn-sm">Удалить выбранные</button>
-        <button type="button" class="btn btn-outline-danger btn-sm">Удалить все</button>
+        <button type="button" class="m-1 btn btn-outline-success btn-sm">Сделал выбранные</button>
+        <button type="button" class="m-1 btn btn-outline-success btn-sm">Сделал все</button>
+        <button type="button" class="m-1 btn btn-outline-primary btn-sm">Сохранить выбранные</button>
+        <button type="button" class="m-1 btn btn-outline-primary btn-sm">Сохранить все</button>
+        <button type="button" class="m-1 btn btn-outline-danger btn-sm">Удалить выбранные</button>
+        <button type="button" class="m-1 btn btn-outline-danger btn-sm">Удалить все</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
